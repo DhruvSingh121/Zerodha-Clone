@@ -1,0 +1,112 @@
+.auth_container {
+  width: 50%;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 40px 30px;
+  /* box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); */
+  transition: all 0.3s ease;
+}
+
+/* ========== Header ========== */
+.form_box h2 {
+  text-align: center;
+  color: #0f172a;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+/* ========== Form Styling ========== */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+form label {
+  font-size: 14px;
+  color: #475569;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+form input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  font-size: 15px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #38bdf8;
+  box-shadow: 0 0 6px rgba(56, 189, 248, 0.3);
+}
+
+/* ========== Button Styling ========== */
+form button {
+  background: #38bdf8;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+  background: #0ea5e9;
+  transform: translateY(-2px);
+}
+
+/* ========== Toggle Text ========== */
+.toggle_text {
+  text-align: center;
+  color: #475569;
+  margin-top: 18px;
+  font-size: 14px;
+}
+
+.toggle_link {
+  color: #38bdf8;
+  cursor: pointer;
+  font-weight: 500;
+  margin-left: 5px;
+  transition: color 0.2s ease;
+}
+
+.toggle_link:hover {
+  color: #0ea5e9;
+  text-decoration: underline;
+}
+
+/* ========== Hover Glow Effect for Form Box ========== */
+/* .auth_container:hover {
+  box-shadow: 0 10px 30px rgba(56, 189, 248, 0.1);
+} */
+
+/* ========== Responsive ========== */
+@media (max-width: 420px) {
+  .auth_container {
+    width: 90%;
+    padding: 30px 20px;
+  }
+
+  .form_box h2 {
+    font-size: 20px;
+  }
+
+  form input,
+  form button {
+    font-size: 14px;
+  }
+}
